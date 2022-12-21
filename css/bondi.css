@@ -1,0 +1,205 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --first-color: #19283f;
+  --second-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+.navbar {
+  background-color: var(--first-color);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-item .nav-link {
+  color: white;
+}
+
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:active,
+.navbar .nav-item .nav-link:hover {
+  color: var(--second-color);
+}
+
+.navbar .search {
+  border-left: 1px solid white;
+}
+
+.navbar .search svg {
+  color: var(--second-color);
+}
+
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border: 1px solid white;
+}
+
+.navbar .navbar-toggler:focus {
+  color: var(--second-color);
+  box-shadow: none;
+  border-color: var(--second-color);
+}
+
+.landing {
+  background-color: var(--first-color);
+}
+
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+
+.main-btn:hover {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.main-btn:focus,
+.main-btn:active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+
+.main-title > svg {
+  color: var(--yellow-color);
+  font-size: 50px;
+}
+
+.main-title::after {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--second-color);
+  height: 2px;
+  width: 120px;
+}
+
+.features .icon-holder {
+  height: 200px;
+}
+
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+  color: var(--second-color);
+}
+
+.features h4 {
+  color: var(--yellow-color);
+}
+
+.our-work {
+  background-color: var(--section-color);
+}
+
+.our-work ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: #33d1cc91;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover:before {
+  transform: translateX(0);
+}
+
+.stuff .description {
+  max-width: 500px;
+}
+
+.team {
+  background-color: var(--section-color);
+}
+
+.team h2 {
+  color: var(--yellow-color);
+}
+
+.team h4 {
+  background-color: var(--second-color);
+  color: white;
+}
+.project {
+  background-color: var(--first-color);
+}
+
+.sub {
+  background-color: var(--yellow-color);
+}
+
+.sub input[type="email"] {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+.sub input[type="email"]:focus {
+  outline: none;
+}
+
+.sub input[type="submit"] {
+  background-color: var(--first-color);
+  color: var(--yellow-color);
+}
+
+.sub input[type="email"]::placeholder {
+  color: white;
+}
+
+.footer {
+  background-color: var(--first-color);
+}
+
+.footer .copyright > span {
+  color: var(--second-color);
+}
+
+.footer .copyright div > span {
+  color: var(--yellow-color);
+}
+
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+  background-color: var(--second-color);
+}
